@@ -5,7 +5,7 @@
   "properties": {
     "title": "test title",
     "license": "AFL-3.0",
-    "Description": "Functional Urban Area (FUA) boundaries, used within the context of Urban Atlas 2012 and 2018 for the Copernicus Land Monitoring Service. The dataset contains a total of 788 FUA over EEA38 (with the exception of Liechtenstein) and the United Kingdom.\nMore information at https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/b00ec941-c4dd-4673-91ea-2c8b5145892d.",
+    "description": "Functional Urban Area (FUA) boundaries, used within the context of Urban Atlas 2012 and 2018 for the Copernicus Land Monitoring Service. The dataset contains a total of 788 FUA over EEA38 (with the exception of Liechtenstein) and the United Kingdom.\nMore information at https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/b00ec941-c4dd-4673-91ea-2c8b5145892d.",
     "providers": [
       {
         "name": "Sentinel Hub-1",
