@@ -169,7 +169,8 @@
       "LULC change",
       "surface temperature",
       "open data",
-      "landsat"
+      "landsat",
+      "test"
     ],
     "use_case_S4E": [],
     "use_case_WER": [],
