@@ -15,11 +15,6 @@
         "name": "Sentinel Hub-2",
         "description": "Europe since October 2016",
         "url": "https://creodias.sentinel-hub.com"
-      },
-      {
-        "name": "Sentinel Hub-3",
-        "description": "Europe since October 2016",
-        "url": "https://creodias.sentinel-hub.com"
       }
     ],
     "dataSource": "",
