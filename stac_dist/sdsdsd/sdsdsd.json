@@ -31,7 +31,7 @@
       "time": {
         "extent": [
           null,
-          "2999-01-01T00:00:00Z"
+          "Z"
         ],
         "type": "temporal",
         "step": ""
@@ -44,9 +44,11 @@
         "type": "spatial"
       }
     },
+    "datetime": null,
     "raster:bands": [],
     "title": "sdsd",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "start_datetime": null,
+    "end_datetime": "Z",
     "platform": "eox"
   },
   "geometry": {
