@@ -1,0 +1,108 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "World",
+    "crs": "EPSG:4326",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "ORCID_ID": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/pan-european/corine-land-cover",
+        "comments": "The present 100m raster dataset is the 2018 CLC status layer modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.\n\nCORINE Land Cover (CLC) data are produced from 1986 for European (EEA member or cooperating) countries. Altogether five mapping inventories were implemented in this period, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018) and four CLC-Change (CLCC) layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018). Pan-European CLC and CLCC data are available as vector and raster products."
+      }
+    ],
+    "dataSource": "grid",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          0,
+          10
+        ],
+        "reference_system": "EPSG:9389 (EVRF2019 height)",
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2015-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "windspeed_u, windspeed_v",
+        "nodata": "255, NaN",
+        "data_type": null,
+        "definition": "https://qudt.org/vocab/quantitykind/Velocity",
+        "category_list": null,
+        "comment": null,
+        "interpolation": "nearest"
+      }
+    ],
+    "title": "Corine Land Cover ",
+    "personalData": null,
+    "Provenance_name": "EO-based, produced  by countries",
+    "documentation": null,
+    "keywords": "Land Cover, Corine",
+    "datatime": "2021-01-01T00:00:00Z",
+    "use_case_S4E": null,
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": null,
+    "platform": null,
+    "ingestion_status": null
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "Corine_Land_Cover Format: [_a-zA-Z][-\\._0-9a-zA-Z]*"
+}
