@@ -47,7 +47,7 @@
           "2018-01-01T00:00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y0M"
+        "step": "P3Y0M0DT0H0M0S"
       },
       "z": {
         "extent": [
