@@ -1,20 +1,18 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "id": "Open_Street_Map_OSM",
   "properties": {
     "license": null,
     "description": null,
-    "area_cover": "World",
-    "crs": "EPSG:4326",
     "providers": [
       {
-        "organization": "OSM",
         "organization_name": null,
-        "organization_email": null,
-        "orcid_id": null,
-        "project_purpose": null,
+        "organization": "OSM",
+        "comments": "OSM provides 2D-level data for buildings",
         "doc_link": null,
-        "comments": "OSM provides 2D-level data for buildings"
+        "organization_email": null,
+        "project_purpose": null
       }
     ],
     "dataSource": "www.openstreetmap.org",
@@ -28,8 +26,7 @@
         "reference_system": "EPSG:4326",
         "type": "spatial",
         "unit_of_measure": "m",
-        "interpolation": "nearest",
-        "regular": false
+        "interpolation": "nearest"
       },
       "y": {
         "axis": "y",
@@ -40,19 +37,7 @@
         "reference_system": "EPSG:4326",
         "type": "spatial",
         "unit_of_measure": "m",
-        "interpolation": "nearest",
-        "regular": false
-      },
-      "z": {
-        "axis": "z",
-        "extent": [
-          null,
-          null
-        ],
-        "reference_system": null,
-        "type": "spatial",
-        "unit_of_measure": null,
-        "interpolation": null
+        "interpolation": "nearest"
       },
       "time": {
         "extent": [
@@ -60,9 +45,32 @@
           "2999-01-01T00:00:00Z"
         ],
         "type": "temporal",
-        "unit_of_measure": "y",
+        "step": "P0Y0M0DT1H0M1S"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "unit_of_measure": null,
         "interpolation": null,
-        "step": "P4Y"
+        "type": "spatial"
+      },
+      "unit_of_measure": {
+        "regular": true,
+        "bbox": [
+          "1900-01-01T00:00:00",
+          "2999-01-01T00:00:00"
+        ],
+        "step": {
+          "Y": 0,
+          "M": 0,
+          "D": 0,
+          "H": 1,
+          "Ms": 0,
+          "S": 1
+        }
       }
     },
     "datetime": "2021-10-02T00:00:00Z",
@@ -70,8 +78,8 @@
       {
         "band_name": null,
         "unit": null,
-        "nodata": 0,
         "data_type": "int8",
+        "nodata": 0,
         "definition": "CLC code - each code represents a colour",
         "description": null,
         "category_list": null,
@@ -81,22 +89,51 @@
     ],
     "title": "Open Street Map (OSM)",
     "datasource_type": "vector",
+    "keywords": null,
+    "area_cover": "World",
+    "documentation": null,
+    "crs": "EPSG:4326",
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
     "personalData": null,
     "Provenance_name": null,
     "preprocessing": null,
-    "documentation": null,
-    "keywords": null,
+    "modification": null,
+    "provision": null,
     "use_case_S4E": 2,
     "use_case_WER": 2,
-    "use_case_NHM_2": "x",
-    "use_case_NILU": 1,
     "use_case_NHM": 1,
-    "platform": "Both",
-    "ingestion_status": "UCs need it only as backdrop, therefore no ingestion necessary"
+    "use_case_NILU": 1,
+    "use_case_NHM_2": "x",
+    "ingestion_status": "UCs need it only as backdrop, therefore no ingestion necessary",
+    "platform": "Both"
   },
   "geometry": {
     "type": "Polygon",
-    "coordinates": []
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
   },
   "links": [
     {
@@ -110,13 +147,36 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=Open_Street_Map_OSM&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=Open_Street_Map_OSM",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
     }
   ],
-  "assets": {},
-  "bbox": [],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=Open_Street_Map_OSM&bbox=-90,-180,90,180&time=\"1900-01-01T00:00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "id": "Open_Street_Map_OSM"
+  ]
 }
