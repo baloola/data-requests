@@ -1,0 +1,121 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": "asdsds",
+    "description": "some some",
+    "area_cover": "World",
+    "crs": "EPSG:4326",
+    "providers": [
+      {
+        "organization": "OSM",
+        "organization_name": "some",
+        "organization_email": "email@email.com",
+        "ORCID_ID": "ididid",
+        "project_purpose": "some",
+        "doc_link": "https://some.com",
+        "comments": "OSM provides 2D-level data for buildings"
+      }
+    ],
+    "dataSource": "vector",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": "nearest",
+        "step": "irregular"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": "nearest",
+        "step": "irregular"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          0,
+          10
+        ],
+        "reference_system": "EPSG:9389",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": "Bilinear",
+        "step": 2
+      },
+      "time": {
+        "extent": [
+          "1900-01-01T00:00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "y",
+        "interpolation": null,
+        "step": 4
+      }
+    },
+    "datetime": "2021-10-02T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "some",
+        "nodata": 0,
+        "data_type": "int8",
+        "definition": "CLC code - each code represents a colour",
+        "description": "sdsdsds",
+        "category_list": "sdsdsds",
+        "comment": "sdsdsdsd",
+        "interpolation": "nearest"
+      }
+    ],
+    "title": "Open Street Map (OSM)",
+    "source": "www.openstreetmap.org",
+    "personalData": "sdsdsd",
+    "Provenance_name": "sdsdsdsd",
+    "documentation": "sdsdsd",
+    "keywords": "sdsd,sds,sds",
+    "use_case_S4E": 2,
+    "use_case_WER": 2,
+    "use_case_NHM_2": "x",
+    "use_case_NILU": 1,
+    "use_case_NHM": 1,
+    "platform": "Both",
+    "ingestion_status": "UCs need it only as backdrop, therefore no ingestion necessary"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "Open_Street_Map_OSM"
+}
