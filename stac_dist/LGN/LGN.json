@@ -1,0 +1,122 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "Netherlands",
+    "crs": null,
+    "providers": [
+      {
+        "organization": "WENR",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": "lgn.nl",
+        "comments": "download via email; preprocessing by WENR to unify land use categories (which change over years)"
+      }
+    ],
+    "dataSource": "https://lgn.nl/bestanden , https://filesender.surf.nl/?s=download&token=30548341-64c3-48a9-9a74-dec69dd3aa91",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          0,
+          300000
+        ],
+        "reference_system": "EPSG:28992",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": "Nearest\u200b",
+        "step": 5
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          280000,
+          625000
+        ],
+        "reference_system": "EPSG:28992",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": "Nearest\u200b",
+        "step": 5
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "2012-01-01T00:00:00Z",
+          "2022-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "y",
+        "interpolation": null,
+        "regular": false
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "landuse (highest value occurring is 62, total unique values is 39)",
+        "unit": "categorial, numeric code, unitless (https://qudt.org/vocab/unit/UNITLESS)",
+        "nodata": 0,
+        "data_type": "int",
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": "list of codes to be referenced in range type, stored in separate place, accessible to user, temporal download link: https://filesender.surf.nl/?s=download&token=30548341-64c3-48a9-9a74-dec69dd3aa91",
+        "interpolation": null
+      }
+    ],
+    "title": "National Land Use Database (LGN)",
+    "datasource_type": "grid",
+    "personalData": null,
+    "Provenance_name": "multiple",
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": null,
+    "use_case_WER": 1,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": null,
+    "platform": "Rasdaman",
+    "ingestion_status": "completed, year as timestamp, (2012,2019,2022,2021,2022)"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "LGN"
+}
