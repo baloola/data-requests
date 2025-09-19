@@ -2,5 +2,19 @@
   "id": "testing_git_clerk",
   "properties": {
     "title": "test"
-  }
+  },
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "assets": {
+    "dadad": {
+      "href": "dadada",
+      "roles": [
+        "metadata"
+      ]
+    }
+  },
+  "geometry": {},
+  "links": [],
+  "bbox": [],
+  "stac_extensions": []
 }
