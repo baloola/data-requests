@@ -8,7 +8,12 @@
   "stac_version": "1.0.0",
   "geometry": {},
   "links": [],
-  "assets": {},
+  "assets": {
+    "asset-1": {
+      "href": "",
+      "roles": []
+    }
+  },
   "bbox": [],
   "stac_extensions": []
 }
